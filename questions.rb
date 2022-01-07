@@ -17,7 +17,7 @@ class Questions
     # elsif choose_operands == "/"
     #   @answer_given = @num1 / @num2 
     end
-    @question = " What does #{@num1} #{choose_operands} #{@num2} equal?" 
+    @question = " What does #{@num1} #{choose_operands} #{@num2} = ?" 
   end
 
   def display_question
