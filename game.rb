@@ -2,9 +2,9 @@ class Game
   attr_accessor :current_player
 
   def initialize(player_1, player_2)
+    puts "Welcome to the Two-Player Math Game!"
     @player_1 = Player.new(player_1)
     @player_2 = Player.new(player_2)
-    puts "Welcome to the Two-Player Math Game!"
     @current_player = @player_1
     @game_state = true
   end
@@ -44,7 +44,7 @@ class Game
   end
 
   def player_rotation
-    if @current_player = @player_1
+    if @current_player == @player_1
       @current_player = @player_2
       puts "#{@current_player.name}'s turn!"
     else
